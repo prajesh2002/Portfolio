@@ -402,7 +402,7 @@ export default function HeroSection() {
           attention to detail and a passion for creating impactful digital
           experiences, I transform ideas into reality through coding and design.
         </p>
-        <button
+        <Link
           className="btn2 md:mr-4 my-2 md:my-0 mr-2"
           activeClass=""
           spy={true}
@@ -412,19 +412,20 @@ export default function HeroSection() {
           onClick={downloadResume}
         >
           Resume
-        </button>
-        <button className="btn ">
-          <Link
-            activeClass=""
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            to="Contact"
-          >
-            Connect
-          </Link>
-        </button>
+        </Link>
+        {/* <button className="btn "> */}
+        <Link
+          className="btn"
+          activeClass=""
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to="Contact"
+        >
+          Connect
+        </Link>
+        {/* </button> */}
       </motion.div>
       <div
         className="right lg:w-1/2 overflow-hidden transition-all duration-500 ease-in-out transform p-5 md:p-8 lg:p-0"

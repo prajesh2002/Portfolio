@@ -198,16 +198,14 @@ const AboutMe = () => {
     <TrackVisibility partialVisibility>
       {({ isVisible }) => (
         <>
-          <div className="AboutMe flex flex-col gap-10 lg:min-h-full min-h-full lg:mb-10">
-            <h2
-              className="heading text-3xl lg:text-5xl xl:text-6xl font-bold text-center lg:text-left xl:pl-40 xl:pr-28 lg:pl-10 
-            lg:mb-[-60px] mb-[-30px]"
-            >
+          <div className="AboutMe md:mb-10 lg:mb-24">
+            {/* lg:pl-40 lg:pr-28 */}
+            <h2 className="heading text-3xl lg:text-5xl xl:text-6xl font-bold text-center lg:text-left xl:pl-40 xl:pr-28 lg:pl-10 md:my-4">
               About Me
             </h2>
 
             <motion.div
-              className="flex flex-col-reverse lg:flex-row items-center text-center lg:text-left px-4 xl:pl-40 xl:pr-28 lg:pl-10 lg:h-auto min-h-full mb-10 lg:gap-x-20 overflow-hidden"
+              className="flex flex-col-reverse lg:flex-row items-center text-center lg:text-left px-4 xl:pl-40 xl:pr-28 lg:pl-10 lg:h-auto lg:gap-x-20 overflow-hidden"
               variants={containerVariants}
               initial="hidden"
               animate={isVisible ? "visible" : "hidden"}
