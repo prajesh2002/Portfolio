@@ -143,7 +143,7 @@ export const experiences = [
 
 const About = () => {
   return (
-    <div className="Education lg:pl-40 lg:pr-24 lg:h-screen min-h-full text-black px-4 lg:px-0 mt-5 lg:mt-0">
+    <div className="Education lg:pl-40 lg:pr-24 lg:min-h-screen min-h-full text-black px-4 lg:px-0 mt-5 lg:mt-0">
       <div className="my-10">
         <h1 className="text-3xl heading lg:text-5xl xl:text-6xl font-bold text-center lg:text-left">
           Education
