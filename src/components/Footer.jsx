@@ -12,7 +12,7 @@ function Footer() {
         </p>
         <div className="md:ml-auto flex gap-4">
           <a
-            href="www.linkedin.com/in/prajesh-dhande-29368b24b"
+            href="https://www.linkedin.com/in/prajesh-dhande-29368b24b"
             className="text-white hover:text-gray-300"
             target="_blank"
             rel="noreferrer"

@@ -14,11 +14,11 @@
 
 
 .btn {
-    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none cursor-pointer focus:ring-blue-300 font-medium rounded-lg text-base w-full sm:w-auto px-5 py-2.5 text-center hover:scale-110;
+    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none cursor-pointer focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center hover:scale-110;
 }
 
 .btn2 {
-    @apply text-white bg-gradient-to-r from-[#ff439b] to-[#ff006f] focus:ring-4 focus:outline-none cursor-pointer focus:ring-pink-600 font-medium rounded-lg text-base w-full sm:w-auto px-5 py-2.5 text-center hover:scale-110;
+    @apply text-white bg-gradient-to-r from-[#ff439b] to-[#ff006f] focus:ring-4 focus:outline-none cursor-pointer focus:ring-pink-600 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center hover:scale-110;
 }
 
 .heading {

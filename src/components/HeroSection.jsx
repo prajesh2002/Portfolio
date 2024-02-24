@@ -278,7 +278,6 @@
 // // }
 // // // -------------
 
-
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 // import about from "../assets/new.gif";
@@ -350,12 +349,21 @@ export default function HeroSection() {
 
   const textVariants = {
     hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 1, delay: 0.5, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 1, delay: 0.5, ease: "easeOut" },
+    },
   };
 
   const imageVariants = {
     hidden: { opacity: 0, scale: 0.8, x: "80%" },
-    visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 1, delay: 1, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      x: 0,
+      transition: { duration: 1, delay: 1, ease: "easeOut" },
+    },
   };
 
   return (
@@ -365,10 +373,7 @@ export default function HeroSection() {
       initial="hidden"
       animate="visible"
     >
-      <motion.div
-        className="left lg:w-1/2 lg:pr-10"
-        variants={textVariants}
-      >
+      <motion.div className="left lg:w-1/2 lg:pr-10" variants={textVariants}>
         <TrackVisibility>
           {({ isVisible }) => (
             <div
@@ -397,7 +402,18 @@ export default function HeroSection() {
           attention to detail and a passion for creating impactful digital
           experiences, I transform ideas into reality through coding and design.
         </p>
-        <button className="btn md:mr-4 my-2 md:my-0 mr-2">
+        <button
+          className="btn2 md:mr-4 my-2 md:my-0 mr-2"
+          activeClass=""
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={downloadResume}
+        >
+          Resume
+        </button>
+        <button className="btn ">
           <Link
             activeClass=""
             spy={true}
@@ -406,21 +422,8 @@ export default function HeroSection() {
             duration={500}
             to="Contact"
           >
-            {" "}
-            Let's Connect
+            Connect
           </Link>
-        </button>
-        <button
-          activeClass=""
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          to="Contact"
-          className="btn2"
-          onClick={downloadResume}
-        >
-          Resume
         </button>
       </motion.div>
       <div

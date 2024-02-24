@@ -232,10 +232,10 @@ const AboutMe = () => {
                   in hand, indulging in the excitement of the game. Whether it's
                   the rhythm of music or the thrill of sports, these passions
                   not only add a delightful balance to my tech pursuits but also
-                  inspire a holistic approach to life.
+                  inspire a holistic approach to life. Let's navigate this
+                  exciting path of discovery together!
                   {/* I'm here to connect with fellow enthusiasts, learn
           from the experienced, and share the joy of the beginner's journey. */}
-                  Let's navigate this exciting path of discovery together!
                 </p>
               </motion.div>
               <motion.div

@@ -180,7 +180,6 @@ function Header() {
             smooth={true}
             offset={-70}
             duration={500}
-            to="Contact"
             className="btn2"
             onClick={handleResumeClick}
           >
@@ -277,7 +276,6 @@ function Header() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="Contact"
                 className="btn2"
                 onClick={handleResumeClick}
               >
