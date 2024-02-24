@@ -1,0 +1,5 @@
+HEROSECTION
+
+from-gray-100 to-gray-300
+from-teal-100 to-cyan-300
+from-red-100 to-red-200

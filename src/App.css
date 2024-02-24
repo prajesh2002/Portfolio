@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+/* Add this to your styles */
+/* .active {
+    color: #ff3975; 
+  } */
+
+
+.blue-gradient_text {
+    @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pink-gradient_text {
+    @apply bg-gradient-to-r from-[#ff84a7] to-[#ff2158] bg-clip-text text-transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.btn {
+    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none cursor-pointer focus:ring-blue-300 font-medium rounded-lg text-base w-full sm:w-auto px-5 py-2.5 text-center hover:scale-110;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn2 {
+    @apply text-white bg-gradient-to-r from-[#ff439b] to-[#ff006f] focus:ring-4 focus:outline-none cursor-pointer focus:ring-pink-600 font-medium rounded-lg text-base w-full sm:w-auto px-5 py-2.5 text-center hover:scale-110;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading {
+    /* @apply bg-gradient-to-r from-[#00CED1] to-[#FF1493] bg-clip-text text-transparent; */
+    @apply bg-gradient-to-r from-[#00a8e4] to-[#ff678f] bg-clip-text text-transparent;
+    /* @apply bg-gradient-to-r from-[#ff808f] to-[#ff0055] bg-clip-text text-transparent; */
 }
