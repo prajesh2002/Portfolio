@@ -78,7 +78,7 @@ const About = () => {
             {experiences.map((experience) => {
               return (
                 <VerticalTimelineElement
-                  key={experience.location}
+                  key={experience.title}
                   date={
                     <div className=" text-lg md:text-xl">{experience.date}</div>
                   }
