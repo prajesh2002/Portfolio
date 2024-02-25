@@ -1,78 +1,3 @@
-// // EducationTimeline.js
-
-// import React from "react";
-// import { useSpring, animated } from "react-spring";
-// import {
-//   VerticalTimeline,
-//   VerticalTimelineElement,
-// } from "react-vertical-timeline-component";
-// import { FaGraduationCap } from "react-icons/fa";
-// import { FaBuilding } from "react-icons/fa";
-// import { FaSchool } from "react-icons/fa";
-// import "react-vertical-timeline-component/style.min.css";
-
-// const EducationTimeline = () => {
-//   const props = useSpring({
-//     opacity: 1,
-//     from: { opacity: 0 },
-//   });
-
-//   return (
-//     <animated.div style={props} className="Education my-8 text-center">
-//       <h2 className="text-3xl font-bold mb-4">Education</h2>
-//       <div className="flex flex-col items-center space-y-6">
-//         <VerticalTimeline lineColor="#000">
-//           <VerticalTimelineElement
-//             className="vertical-timeline-element--education bg-gray-100 border border-gray-300 p-4 rounded-md"
-//             iconStyle={{ background: "#000", color: "#fff" }}
-//             icon={<FaGraduationCap />}
-//           >
-//             <div className="flex justify-around flex-col md:flex-row">
-//               <h2 className="text-xl font-bold mb-2">
-//                 {" "}
-//                 G H Raisoni College Of Engineering, Nagpur
-//               </h2>
-//               <h2 className="text-xl font-bold mb-2"> 2024 (Expected)</h2>
-//             </div>
-//             <h2 className="text-lg mb-2">9.13 CGPA</h2>
-//             <h3 className="text-gray-600">Nagpur, Maharashtra</h3>
-//           </VerticalTimelineElement>
-//           <VerticalTimelineElement
-//             className="vertical-timeline-element--education bg-gray-100 border border-gray-300 p-4 rounded-md"
-//             iconStyle={{ background: "#000", color: "#fff" }}
-//             icon={<FaBuilding />}
-//           >
-//             <div className="flex justify-around flex-col md:flex-row">
-//               <h2 className="text-xl font-bold mb-2">
-//                 {" "}
-//                 Shri Shivaji Science College, Nagpur
-//               </h2>
-//               <h2 className="text-xl font-bold mb-2"> 2020</h2>
-//             </div>
-//             <h2 className="text-lg mb-2">80.46 %</h2>
-//             <h3 className="text-gray-600">Nagpur, Maharashtra</h3>
-//           </VerticalTimelineElement>
-//           <VerticalTimelineElement
-//             className="vertical-timeline-element--education bg-gray-100 border border-gray-300 p-4 rounded-md"
-//             iconStyle={{ background: "#000", color: "#fff" }}
-//             icon={<FaSchool />}
-//           >
-//             <div className="flex justify-around flex-col md:flex-row">
-//               <h2 className="text-xl font-bold mb-2"> Sanjuba High School</h2>
-//               <h2 className="text-xl font-bold mb-2"> 2018</h2>
-//             </div>
-//             <h2 className="text-lg mb-2">90.40 %</h2>
-//             <h3 className="text-gray-600">Nagpur, Maharashtra</h3>
-//           </VerticalTimelineElement>
-//         </VerticalTimeline>
-//       </div>
-//     </animated.div>
-//     // </div>
-//   );
-// };
-
-// export default EducationTimeline;
-
 import React from "react";
 import {
   VerticalTimeline,
@@ -143,21 +68,19 @@ export const experiences = [
 
 const About = () => {
   return (
-    <div className="Education lg:pl-40 lg:pr-24 lg:min-h-screen min-h-full text-black px-4 lg:px-0 mt-5 lg:mt-0">
+    <div className="Education lg:min-h-full min-h-full lg:mb-24">
       <div className="my-10">
-        <h1 className="text-3xl heading lg:text-5xl xl:text-6xl font-bold text-center lg:text-left">
+        <h1 className="heading text-3xl lg:text-5xl xl:text-6xl font-bold my-4 md:my-0 text-center lg:text-left xl:pl-44 lg:pl-10 mb">
           Education
         </h1>
-        <div>
+        <div className=" lg:pr-10 lg:pl-8 xl:px-0 md:mt-10">
           <VerticalTimeline lineColor="gray">
             {experiences.map((experience) => {
               return (
                 <VerticalTimelineElement
                   key={experience.location}
                   date={
-                    <div className=" text-lg md:text-xl">
-                      {experience.date}
-                    </div>
+                    <div className=" text-lg md:text-xl">{experience.date}</div>
                   }
                   grade={experience.grade}
                   icon={

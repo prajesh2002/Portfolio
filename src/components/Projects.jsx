@@ -180,21 +180,21 @@ const Projects = () => {
   };
 
   return (
-    <div className="Projects  bg-gradient-to-b  w-full min-h-screen text-gray-800 lg:pl-44 lg:pr-44 mb-10 lg:mb-0">
-      <p className="heading text-3xl lg:text-5xl xl:text-6xl font-bold my-4 text-center lg:text-left mb-10">
+    <div className="Projects  bg-gradient-to-b w-full min-h-screen text-gray-800 flex flex-col gap-8 lg:mb-24">
+      <h2 className="heading text-3xl lg:text-5xl xl:text-6xl font-bold my-4 md:my-0 text-center lg:text-left xl:pl-44 xl:pr-28 lg:pl-10">
         Projects
-      </p>
-      <div className="flex flex-col min-h-full w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0 cursor-pointer mx-1 md:mx-4 lg:mx-0">
+      </h2>
+      <div className="flex flex-col min-h-full w-full xl:pl-44 xl:pr-28 lg:pl-12">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center mx-5 lg:mx-0 lg:pr-16 cursor-pointer ">
           {portfolios.map(({ id, src, code, demo }) => (
             <div
               key={id}
-              className="shadow-md rounded-lg overflow-hidden transition-transform duration-200 hover:scale-105 font-semibold"
+              className="shadow-lg rounded-lg overflow-hidden transition-transform duration-200 hover:scale-105 hover:opacity-70 bg-gray-100 font-semibold"
             >
               <img
                 src={src}
                 alt=""
-                className="w-full h-48 object-cover hover:opacity-70"
+                className="w-full h-48 object-cover "
                 onClick={() => {
                   openDemo(demo);
                 }}

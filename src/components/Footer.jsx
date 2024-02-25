@@ -4,7 +4,7 @@ import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-gray-500 text-white p-6 px-0 md:px-20 transition-all duration-500 ease-in-out">
+    <footer className="bg-black text-white p-6 px-0 md:px-20 transition-all duration-500 ease-in-out">
       <div className="flex flex-col md:flex-row items-center justify-around font-semibold">
         <p className="text-lg ">
           {" "}

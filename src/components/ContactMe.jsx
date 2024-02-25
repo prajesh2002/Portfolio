@@ -52,12 +52,13 @@ export default function Contact() {
   };
   return (
     <>
-      <div className="Contact">
-        {/* <h2 className="heading text-3xl lg:text-5xl xl:text-6xl font-bold mt-4 text-center lg:text-left md:text-3xl lg:pl-44">
+      <div className="Contact my-10 lg:pl-12 xl:pl-44 xl:pr-10 mb-10">
+        <h2 className="heading text-3xl lg:text-5xl xl:text-6xl font-bold text-center lg:text-left md:text-3xl mb-10">
           Let's Connect
-        </h2>{" "} */}
-        <div className="flex flex-col md:flex-row items-center md:space-y-0 md:gap-x-20  min-h-screen justify-evenly mx-auto">
-          <div className="w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 lg:pl-2 px-4 pt-5 md:px-0 md:pt-0">
+        </h2>{" "}
+        <div className="flex flex-col md:flex-row items-center md:space-y-0 md:gap-x-20  justify-evenly mx-auto">
+          <div className="w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 lg:pl-2 px-4 pt-5 md:px-0 md:pt-0 ">
+            {/* bg-gradient-to-r from-red-200 to-red-300 */}
             <TrackVisibility>
               {({ isVisible }) => (
                 <img
@@ -72,9 +73,9 @@ export default function Contact() {
           </div>
 
           <div className="w-full md:w-1/2 lg:w-1/3 lg:pr-8 px-4">
-            <h2 className="heading text-3xl lg:text-5xl xl:text-6xl font-bold mt-4 text-center lg:text-left md:text-3xl mb-5 lg:mb-10">
+            {/* <h2 className="heading text-3xl lg:text-5xl xl:text-6xl font-bold mt-4 text-center lg:text-left md:text-3xl mb-5 lg:mb-10">
               Let's Connect
-            </h2>{" "}
+            </h2>{" "} */}
             <div>
               <form className="space-y-4" ref={form} onSubmit={sendEmail}>
                 <div className="mb-4">

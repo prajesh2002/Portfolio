@@ -305,11 +305,11 @@ const MySkills = () => {
       ref={ref}
       className="Skills flex flex-col gap-10  lg:min-h-full min-h-full lg:mb-24"
     >
-      <h2 className="heading text-3xl lg:text-5xl xl:text-6xl font-bold my-4 md:my-0 text-center lg:text-left xl:pl-40 xl:pr-28 lg:pl-10">
+      <h2 className="heading text-3xl lg:text-5xl xl:text-6xl font-bold my-4 md:my-0 text-center lg:text-left xl:pl-44 xl:pr-28 lg:pl-10">
         Skills
       </h2>
-      <div className="flex flex-col min-h-full w-full xl:pl-40 xl:pr-28 lg:pl-10">
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center mx-5 lg:mx-0">
+      <div className="flex flex-col min-h-full w-full xl:pl-44 xl:pr-28 lg:pl-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center mx-5 lg:mx-0 lg:pr-16">
           {techs.map(({ id, src, title, style }) => (
             <motion.div
               key={id}
