@@ -180,7 +180,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="Projects  bg-gradient-to-b w-full min-h-screen text-gray-800 flex flex-col gap-8 lg:mb-24">
+    <div className="Projects  bg-gradient-to-b w-full min-h-full text-gray-800 flex flex-col gap-8 lg:mb-24">
       <h2 className="heading text-3xl lg:text-5xl xl:text-6xl font-bold my-4 md:my-0 text-center lg:text-left xl:pl-44 xl:pr-28 lg:pl-10">
         Projects
       </h2>
