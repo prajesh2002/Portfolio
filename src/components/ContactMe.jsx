@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import contactImg from "../assets/contact-img.svg";
 import TrackVisibility from "react-on-screen";
 import img from "../assets/contact.jpg";
@@ -18,6 +18,8 @@ export default function Contact() {
     message: "",
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
   const onFormUpdate = (category, value) => {
     setFormDetails({
       ...formDetails,
@@ -25,7 +27,8 @@ export default function Contact() {
     });
   };
 
-  const form = useRef();
+  const form = useRef(null);
+  const imgRef = useRef(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -50,6 +53,28 @@ export default function Contact() {
         }
       );
   };
+
+  useEffect(() => {
+    const imgObserver = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+        }
+      },
+      { threshold: 0.5 } // Adjust the threshold as needed
+    );
+
+    if (imgRef.current) {
+      imgObserver.observe(imgRef.current);
+    }
+
+    return () => {
+      if (imgRef.current) {
+        imgObserver.unobserve(imgRef.current);
+      }
+    };
+  }, [hasAnimated]);
+
   return (
     <>
       <div className="Contact my-10 lg:pl-12 xl:pl-44 xl:pr-10 mb-10">
@@ -58,18 +83,17 @@ export default function Contact() {
         </h2>{" "}
         <div className="flex flex-col md:flex-row items-center md:space-y-0 md:gap-x-20  justify-evenly mx-auto">
           <div className="w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0 lg:pl-2 px-4 pt-5 md:px-0 md:pt-0 ">
-            {/* bg-gradient-to-r from-red-200 to-red-300 */}
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <img
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                  src={contactImg}
-                  alt="Contact Us"
-                />
-              )}
-            </TrackVisibility>
+            {/* Your existing code for the image */}
+            <div ref={imgRef}>
+              <img
+                className={`${
+                  hasAnimated ? "animate__animated animate__zoomIn" : ""
+                }`}
+                src={contactImg}
+                alt="Contact Us"
+                style={{ width: "100%", maxWidth: "100%", height: "auto" }}
+              />
+            </div>
           </div>
 
           <div className="w-full md:w-1/2 lg:w-1/3 lg:pr-8 px-4">

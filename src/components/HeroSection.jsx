@@ -391,7 +391,7 @@ export default function HeroSection() {
                 </span>
                 <br />
                 <span className="txt-rotate">
-                  <span className="wrap  pink-gradient_text">A {text}</span>
+                  <span className="wrap  pink-gradient_text">{text}</span>
                 </span>
               </h1>
             </div>
