@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import contactImg from "../assets/contact-img.svg";
-import TrackVisibility from "react-on-screen";
-import img from "../assets/contact.jpg";
+// import contactImg from "../assets/contact-img.svg";
+import contactImg from "../assets/contact-footer.gif";
 import "animate.css/animate.min.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
