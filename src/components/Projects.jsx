@@ -123,6 +123,7 @@ import MovieSpace from "../assets/projects/moviespace.png";
 import DesignTask from "../assets/projects/design-task.png";
 import QloronERP from "../assets/projects/QloronERP.png";
 import QloronHome from "../assets/projects/QloronHome.png";
+import SORTBOXS from "../assets/projects/sortboxs.png";
 import { FaGithub, FaUps } from "react-icons/fa";
 
 const Projects = () => {
@@ -168,6 +169,12 @@ const Projects = () => {
       src: QloronHome,
       code: "https://github.com/prajesh2002/Qloron-Home-Page",
       demo: "https://qloron-home-page-beige.vercel.app/",
+    },
+    {
+      id: 8,
+      src: SORTBOXS,
+      code: "https://github.com/prajesh2002/Qloron-Landing-Page",
+      demo: "https://qloron-landing-page.vercel.app/",
     },
   ];
 
